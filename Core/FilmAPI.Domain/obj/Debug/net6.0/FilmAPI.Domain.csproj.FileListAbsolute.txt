@@ -1,0 +1,12 @@
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\bin\Debug\net6.0\FilmAPI.Domain.deps.json
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\bin\Debug\net6.0\FilmAPI.Domain.dll
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\bin\Debug\net6.0\ref\FilmAPI.Domain.dll
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\bin\Debug\net6.0\FilmAPI.Domain.pdb
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\obj\Debug\net6.0\FilmAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\obj\Debug\net6.0\FilmAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\obj\Debug\net6.0\FilmAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\obj\Debug\net6.0\FilmAPI.Domain.AssemblyInfo.cs
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\obj\Debug\net6.0\FilmAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\obj\Debug\net6.0\FilmAPI.Domain.dll
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\obj\Debug\net6.0\ref\FilmAPI.Domain.dll
+C:\Users\Alican\source\repos\MovieAPI\Core\FilmAPI.Domain\obj\Debug\net6.0\FilmAPI.Domain.pdb

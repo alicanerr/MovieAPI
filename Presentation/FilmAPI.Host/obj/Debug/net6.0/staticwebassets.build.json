@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QB11ruQBJQMrFgj2jyWfmPSKVT+K7+zlaii2VOvZU+Q=",
+  "Source": "FilmAPI.Host",
+  "BasePath": "_content/FilmAPI.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

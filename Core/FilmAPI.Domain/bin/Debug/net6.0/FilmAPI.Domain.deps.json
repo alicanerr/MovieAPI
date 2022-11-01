@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FilmAPI.Domain/1.0.0": {
+        "runtime": {
+          "FilmAPI.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FilmAPI.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

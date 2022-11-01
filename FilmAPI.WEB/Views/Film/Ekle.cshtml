@@ -1,0 +1,27 @@
+﻿@model FilmCreateDto
+@{
+    ViewData["Title"] = "Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-controller="film" method="post" asp-action="Ekle" class="needs-validation" novalidate>
+    <div class="mb-3 row">
+
+        <label class="col-md-2 col-form-label">Film Adı</label>
+        <div class="col-md-6">
+            <input asp-for="FilmAd" type="text" class="form-control" placeholder="Film adını yazınız" required>
+        </div>
+
+    </div>
+    <div class="mb-3 row">
+
+        <label class="col-md-2 col-form-label">Film Yapim Yil </label>
+        <div class="col-md-6">
+            <input asp-for="FilmYapimYil" type="number" class="form-control" placeholder="Film yapım yılı yazınız" required>
+        </div>
+
+    </div>
+    <button type="submit" class="btn btn-primary waves-effect waves-light w-md">KAYIT</button>
+</form>
+
+

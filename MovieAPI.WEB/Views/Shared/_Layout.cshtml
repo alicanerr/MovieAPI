@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="tr-TR">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Dashboard | Minible - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+
+    <script src="~/libs/jquery/jquery.min.js"></script>
+
+
+    <link rel="shortcut icon" href="~/images/favicon.ico">
+
+    <link href="~/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="~/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="~/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="~/libs/toastr/build/toastr.min.css">
+
+
+    <!-- DataTables -->
+    <link href="~/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="~/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="~/libs/jquery/jquery.min.js"></script>
+    <script src="~/libs/toastr/build/toastr.min.js"></script>
+
+    <!--form validation-->
+    <script src="~/libs/parsleyjs/parsley.min.js"></script>
+    <script src="~/js/pages/form-validation.init.js"></script>
+
+      
+
+</head>
+<body>
+    @if (TempData["Success"] != null)
+    {
+        <script type="text/javascript">
+            toastr.success('@TempData["Success"]','BAŞARILI')
+        </script>
+    }
+    else if (TempData["Error"] != null)
+    {
+        <script type="text/javascript">
+            toastr.error('@TempData["Error"]','HATA')
+        </script>
+    }
+
+
+    <div id="layout-wrapper">
+        <header id="page-topbar">
+            <div class="navbar-header rounded float-end">
+
+                <a href="javascript:void(0);" class="text-reset notification-item">
+                    <div class="d-flex ">
+                        <div class="flex-shrink-0 me-3">
+                            <img src="~/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="user-pic">
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+        </header>
+        <div class="vertical-menu">
+
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="~/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="~/images/logo-dark.png" alt="" height="20">
+                    </span>
+                </a>
+
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="~/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="~/images/logo-light.png" alt="" height="20">
+                    </span>
+                </a>
+            </div>
+
+            <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+                <i class="fa fa-fw fa-bars"></i>
+            </button>
+
+            <div data-simplebar class="sidebar-menu-scroll">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Menu</li>
+
+                        <li>
+                            <a href="index.html">
+                                <i class="uil-home-alt"></i><span class="badge rounded-pill bg-primary float-end">01</span>
+                                <span>Anasayfa</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="has-arrow waves-effect">
+                                <i class="uil-window-section"></i>
+                                <span>Tanımlamalar</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="true">
+                                <li>
+                                    <a class="has-arrow">Kategoriler</a>
+                                    <ul class="sub-menu" aria-expanded="true">
+                                        <li><a asp-area="" asp-controller="category" asp-action="Index">Kategori Ayarları</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="has-arrow">Ürünler</a>
+                                    <ul class="sub-menu" aria-expanded="true">
+                                        <li><a asp-area="" asp-controller="products" asp-action="Index">Ürün Ayarları</a></li>
+                                        <li><a asp-area="" asp-controller="productcolor" asp-action="Index">Renk Ayarları</a></li>
+                                        <li><a asp-area="" asp-controller="productbrand" asp-action="Index">Marka Ayarları</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="has-arrow">Ürün Özellikleri</a>
+                                    <ul class="sub-menu" aria-expanded="true">
+                                        <li><a asp-area="" asp-controller="ProductFeatures" asp-action="Index">Ürün Özellikleri Liste</a></li>
+                                        <li><a asp-area="" asp-controller="ProductFeatures" asp-action="Save">Ürün Özellik Ekle</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="has-arrow">Ekle</a>
+                                    <ul class="sub-menu" aria-expanded="true">
+                                        <li><a asp-area="" asp-controller="products" asp-action="Save">Ürün Ekle</a></li>
+                                           <li><a asp-area="" asp-controller="productcolor" asp-action="Save">Renk Ekle</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0">Dashboard</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Minible</a></li>
+                                        <li class="breadcrumb-item active">Dashboard</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <main role="main">
+                        <div class="container-fluid">@RenderBody()</div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © Minible.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://themesbrand.com/" target="_blank" class="text-reset">Themesbrand</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="~js/site.js" asp-append-version="true"></script>
+        <script src="~/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="~/libs/metismenu/metisMenu.min.js"></script>
+        <script src="~/libs/simplebar/simplebar.min.js"></script>
+        <script src="~/libs/node-waves/waves.min.js"></script>
+        <script src="~/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+        <script src="~/libs/jquery.counterup/jquery.counterup.min.js"></script>
+
+
+        <script src="~/libs/apexcharts/apexcharts.min.js"></script>
+
+        <script src="~/js/pages/dashboard.init.js"></script>
+
+         <script src="~/libs/tinymce/tinymce.min.js"></script>
+
+        <!-- App js -->
+        <script src="~/js/app.js"></script>>
+
+        <!-- Required datatable js -->
+        <script src="~/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="~/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+
+        <script src="~/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="~/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+        <script src="~/libs/jszip/jszip.min.js"></script>
+        <script src="~/libs/pdfmake/build/pdfmake.min.js"></script>
+        <script src="~/libs/pdfmake/build/vfs_fonts.js"></script>
+        <script src="~/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="~/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="~/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+        <!-- Responsive examples -->
+        <script src="~/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="~/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+        <!-- Datatable init js -->
+        <script src="~/js/pages/datatables.init.js"></script>
+
+        <!-- ckeditor -->
+        <script src="~/libs/@@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+
+        <!--tinymce js-->
+        <script src="~/libs/tinymce/tinymce.min.js"></script>
+
+        <!-- init js -->
+        <script src="~/js/pages/form-editor.init.js"></script>
+
+              <script>
+        ClassicEditor
+        .create( document.querySelector( '#classic-editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+        </script>
+    </div>
+
+    @await RenderSectionAsync("Scripts",required:false)
+</body>
+</html>

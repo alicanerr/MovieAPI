@@ -1,0 +1,17 @@
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\bin\Debug\net6.0\FilmAPI.Infrastructure.deps.json
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\bin\Debug\net6.0\FilmAPI.Infrastructure.dll
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\bin\Debug\net6.0\ref\FilmAPI.Infrastructure.dll
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\bin\Debug\net6.0\FilmAPI.Infrastructure.pdb
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\bin\Debug\net6.0\FilmAPI.Application.dll
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\bin\Debug\net6.0\FilmAPI.Domain.dll
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\bin\Debug\net6.0\FilmAPI.Application.pdb
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\bin\Debug\net6.0\FilmAPI.Domain.pdb
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\obj\Debug\net6.0\FilmAPI.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\obj\Debug\net6.0\FilmAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\obj\Debug\net6.0\FilmAPI.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\obj\Debug\net6.0\FilmAPI.Infrastructure.AssemblyInfo.cs
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\obj\Debug\net6.0\FilmAPI.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\obj\Debug\net6.0\FilmAPI.Infrastructure.csproj.CopyComplete
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\obj\Debug\net6.0\FilmAPI.Infrastructure.dll
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\obj\Debug\net6.0\ref\FilmAPI.Infrastructure.dll
+C:\Users\Alican\source\repos\MovieAPI\Infrastructure\FilmAPI.Infrastructure\obj\Debug\net6.0\FilmAPI.Infrastructure.pdb

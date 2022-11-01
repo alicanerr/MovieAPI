@@ -1,0 +1,40 @@
+﻿@model List<Film>
+@{
+    ViewData["Title"] = "DateFilter";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <div>
+        <span>Başlangıç Yılı :</span> <input type="text" name="start" />
+        <span>Bitiş Yılı :</span> <input type="text" name="end" />
+        <input type="submit" value="Filmleri Getir" />
+    </div>
+    <table class="table table-centered table-nowrap mb-0">
+        <thead class="table-light">
+            <tr>
+                <th>Film Numarası</th>
+                <th>Film Ad</th>
+                <th>Film Yapım Yıl</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FilmAd)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FilmYapimYil)
+                    </td>
+            </tbody>
+        }
+    </table>
+
+}
+
